@@ -1,1 +1,9 @@
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { redDir } from '../path/index.js';
+</script>
+
+<ul>
+	{#each redDir as bin}
+		<li>{bin}</li>
+	{/each}
+</ul>
